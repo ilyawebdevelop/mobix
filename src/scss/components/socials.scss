@@ -1,0 +1,10 @@
+.socials {
+  &List {
+    display: flex;
+    column-gap: 20px;
+  }
+}
+.headerSocials {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}

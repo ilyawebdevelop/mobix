@@ -1,0 +1,58 @@
+.brands {
+  padding-bottom: 0;
+  padding-top: 60px;
+
+  @media(max-width: 1400px) {
+    padding-top: 45px;
+  }
+
+  @media(max-width: 575px) {
+    padding-top: 25px;
+  }
+
+  .titleW {
+    margin-bottom: 80px;
+
+    @media(max-width: 1400px) {
+      margin-bottom: 60px;
+    }
+
+    @media(max-width: 575px) {
+      margin-bottom: 40px;
+    }
+  }
+}
+
+.brandsSliderW {
+  background-color: #FFF500;
+  padding-top: 45px;
+  padding-bottom: 45px;
+  @media(max-width: 1400px){
+    padding-top: 35px;
+    padding-bottom: 35px;
+  }
+}
+
+.brandsSlider {
+  overflow: visible;
+}
+
+.brandsSlide {
+  &Img {
+    border-radius: 50%;
+    width: 142px;
+    height: 142px;
+    object-fit: contain;
+    background-color: #fff;
+    padding: 10px;
+    @media(max-width: 1199px){
+      width: 100px;
+      height: 100px;
+    }
+    @media(max-width: 575px){
+      width: 90px;
+      height: 90px;
+      padding: 5px;
+    }
+  }
+}

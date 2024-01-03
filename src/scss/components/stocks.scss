@@ -1,0 +1,148 @@
+.stocks {
+  padding-top: 40px;
+  @media(max-width: 575px){
+    padding-top: 35px;
+  }
+  .titleW {
+    margin-bottom: 80px;
+    @media(max-width: 1400px){
+      margin-bottom: 60px;
+    }
+    @media(max-width: 575px){
+      margin-bottom: 40px;
+    }
+  }
+
+  &W {
+    display: flex;
+    @media(max-width: 1199px){
+      flex-direction: column;
+      row-gap: 40px;
+    }
+  }
+
+  &Right {
+    width: calc(100% - 420px);
+    position: relative;
+    @media(max-width: 1400px){
+      width: calc(100% - 367px);
+    }
+    @media(max-width: 1199px){
+      width: 100%;
+    }
+
+    .round {
+      position: absolute;
+      bottom: 33px;
+      right: 299px;
+      @media(max-width: 1400px){
+        right: 270px;
+      }
+      @media(max-width: 1199px){
+        display: none;
+      }
+    }
+
+    .stars {
+      position: absolute;
+      right: 50px;
+      top: 100px;
+    }
+  }
+
+  &Left {
+    padding-top: 85px;
+    margin-right: 70px;
+    width: 350px;
+    @media(max-width: 1400px){
+      margin-right: 30px;
+      width: 336px;
+    }
+    @media(max-width: 1199px){
+      width: 100%;
+      margin-right: 0;
+      padding-top: 0;
+    }
+  }
+  &Slider {
+    @media(max-width: 575px){
+      padding-right: 70px;
+      overflow: visible;
+    }
+  }
+  &Slide {
+    margin-top: 370px;
+    transition: all .2s linear;
+    @media(max-width: 1199px){
+      margin-top: 80px;
+    }
+    @media(max-width: 575px){
+      margin-top: 0;
+    
+    }
+
+    &.swiper-slide-active {
+      margin-top: 250px;
+      @media(max-width: 1199px){
+        margin-top: 50px;
+      }
+      @media(max-width: 575px){
+        margin-top: 20px;
+      }
+    }
+
+    &.swiper-slide-next {
+      margin-top: 0;
+    }
+  }
+
+  .abstract {
+    margin-top: 80px;
+    @media(max-width: 575px){
+      margin-top: 60px;
+    }
+  }
+
+  .content {
+    padding-right: 50px;
+    @media(max-width: 1199px){
+      padding-right: 0;
+    }
+
+    p {
+      text-align: justify;
+      max-width: 286px;
+      @media(max-width: 1199px){
+        max-width: 100%;
+      }
+    }
+  }
+
+  .sliderNavArrow {
+    position: absolute;
+    z-index: 2;
+    @media(max-width: 575px){
+      display: none;
+    }
+
+    &.sliderNavArrowNext {
+      right: -50px;
+      bottom: 225px;
+      @media(max-width: 1500px){
+        right: -25px;
+      }
+    }
+
+    &.sliderNavArrowPrev {
+      left: -50px;
+      bottom: 225px;
+      @media(max-width: 1500px){
+        left: -25px;
+      }
+    }
+  }
+
+  .sliderW {
+    position: relative;
+  }
+}

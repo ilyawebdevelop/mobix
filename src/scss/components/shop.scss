@@ -1,0 +1,375 @@
+.shop {
+  position: relative;
+  padding-top: 35px;
+
+  .container {
+    position: relative;
+    z-index: 1;
+  }
+
+  .abstract {
+    &.position-absolute {
+      top: 300px;
+    }
+  }
+
+  .productQuantity {
+    &Btn {
+      width: 9px;
+      height: 17px;
+    }
+
+    &Minus {
+      background: url('@img/icons/count-prev-white.svg') no-repeat center center / contain;
+    }
+
+    &Plus {
+      background: url('@img/icons/count-next-white.svg') no-repeat center center / contain;
+    }
+  }
+}
+
+.shopGrid {
+  display: grid;
+  grid-template-columns: 305px auto;
+
+  @media(max-width: 991px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.shopList {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 35px;
+  row-gap: 15px;
+  padding-left: 25px;
+
+  @media(max-width: 1400px) {
+    column-gap: 20px;
+  }
+
+  @media(max-width: 991px) {
+    padding-left: 0;
+  }
+
+  @media(max-width: 767px) {
+    column-gap: 15px;
+  }
+
+  .productCard {
+    background-color: #0A0A0A;
+    grid-column: 4 span;
+    transition: background-color .2s linear;
+
+    @media(max-width: 1199px) {
+      grid-column: 6 span;
+    }
+
+    @media(max-width: 575px) {
+      grid-column: 12 span;
+    }
+
+    &:hover {
+      background-color: #FFF500;
+
+      .productCardTitle {
+        color: #0A0A0A;
+      }
+
+      .productCardDescr {
+        color: #0A0A0A;
+      }
+
+      .productQuantity {
+        input {
+          background-color: #0A0A0A;
+          color: #fff;
+        }
+      }
+
+      .productCardPrice {
+        color: #0A0A0A;
+      }
+
+      .productAddToCart {
+        background-color: #0A0A0A;
+        color: #fff;
+      }
+
+      .productQuantityMinus {
+        background: url('@img/icons/count-prev.svg') no-repeat center center / contain;
+      }
+
+      .productQuantityPlus {
+        background: url('@img/icons/count-next.svg') no-repeat center center / contain;
+      }
+
+      .rating {
+
+        svg {
+          fill: rgba($color: #0A0A0A, $alpha: .5);
+        }
+
+        &--1 {
+          svg {
+            &:nth-child(1) {
+              fill: #0A0A0A;
+            }
+          }
+        }
+
+        &--2 {
+          svg {
+
+            &:nth-child(1),
+            &:nth-child(2) {
+              fill: #0A0A0A;
+            }
+          }
+        }
+
+        &--3 {
+          svg {
+
+            &:nth-child(1),
+            &:nth-child(2),
+            &:nth-child(3) {
+              fill: #0A0A0A;
+            }
+          }
+        }
+
+        &--4 {
+          svg {
+
+            &:nth-child(1),
+            &:nth-child(2),
+            &:nth-child(3),
+            &:nth-child(4) {
+              fill: #0A0A0A;
+            }
+          }
+        }
+
+        &--5 {
+          svg {
+
+            &:nth-child(1),
+            &:nth-child(2),
+            &:nth-child(3),
+            &:nth-child(4),
+            &:nth-child(5) {
+              fill: #0A0A0A;
+            }
+          }
+        }
+      }
+    }
+
+    .productCardTitle {
+      color: #fff;
+    }
+
+    .productCardDescr {
+      color: #fff;
+    }
+
+    .productCardPrice {
+      color: #fff;
+    }
+
+    .rating {
+
+      svg {
+        fill: rgba($color: #fff, $alpha: .5);
+      }
+
+      &--1 {
+        svg {
+          &:nth-child(1) {
+            fill: #fff;
+          }
+        }
+      }
+
+      &--2 {
+        svg {
+
+          &:nth-child(1),
+          &:nth-child(2) {
+            fill: #fff;
+          }
+        }
+      }
+
+      &--3 {
+        svg {
+
+          &:nth-child(1),
+          &:nth-child(2),
+          &:nth-child(3) {
+            fill: #fff;
+          }
+        }
+      }
+
+      &--4 {
+        svg {
+
+          &:nth-child(1),
+          &:nth-child(2),
+          &:nth-child(3),
+          &:nth-child(4) {
+            fill: #fff;
+          }
+        }
+      }
+
+      &--5 {
+        svg {
+
+          &:nth-child(1),
+          &:nth-child(2),
+          &:nth-child(3),
+          &:nth-child(4),
+          &:nth-child(5) {
+            fill: #fff;
+          }
+        }
+      }
+    }
+
+    .productQuantity {
+      input {
+        background-color: #FFF500;
+        color: #0A0A0A;
+      }
+    }
+
+  }
+}
+
+.filter {
+  &:not(:last-child) {
+    margin-bottom: 180px;
+
+    @media(max-width: 991px) {
+      margin-bottom: 80px;
+    }
+
+    @media(max-width: 575px) {
+      margin-bottom: 45px;
+    }
+  }
+}
+
+.filterItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 35px;
+  font-size: 18px;
+  line-height: 23px;
+  padding-left: 15px;
+  padding-right: 15px;
+  cursor: pointer;
+  position: relative;
+
+  @media(max-width: 575px) {
+    padding-left: 0;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+
+    @media(max-width: 575px) {
+      margin-bottom: 12px;
+    }
+  }
+
+  .filterSubItem {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    z-index: 1;
+    background-color: #0A0A0A;
+    padding: 20px;
+    width: 300px;
+    @media(max-width: 991px){
+      left: 0;
+      top: calc(100% + 5px);
+      width: 100%;
+    }
+    &Name {
+      position: relative;
+      &::before {
+        content: '- ';
+      }
+      &:not(:last-child){
+        margin-bottom: 8px;
+      }
+    }
+  }
+}
+
+.filterItemArrow {
+  width: 6px;
+  height: 11px;
+  background: url('@img/icons/filter-arrow.svg') no-repeat center center / contain;
+  min-width: 6px;
+}
+
+.shopSearchW {
+  display: flex;
+  width: 100%;
+  margin-bottom: 30px;
+
+  @media(max-width: 767px) {
+    flex-direction: column-reverse;
+    row-gap: 15px;
+  }
+}
+
+.shopTitle {
+  max-width: 301px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 42px;
+  background-color: #FFF500;
+  padding-left: 15px;
+  color: #0A0A0A;
+  font-family: $font-family-bold;
+  font-size: 20px;
+
+  @media(max-width: 767px) {
+    max-width: 100%;
+  }
+}
+
+.sidebar {
+  max-width: 301px;
+
+  @media(max-width: 991px) {
+    max-width: 100%;
+    margin-bottom: 50px;
+  }
+  @media(max-width: 575px){
+    margin-bottom: 30px;
+  }
+}
+
+.sidebarBlockTitle {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 42px;
+  background-color: #FFF500;
+  padding-left: 15px;
+  color: #0A0A0A;
+  font-family: $font-family-bold;
+  font-size: 20px;
+  margin-bottom: 30px;
+}

@@ -1,0 +1,141 @@
+.order {
+  position: relative;
+  padding-top: 45px;
+  @media(max-width: 575px){
+    padding-top: 25px;
+  }
+  .titleW {
+    margin-bottom: 80px;
+    @media(max-width: 1400px){
+      margin-bottom: 60px;
+    }
+    @media(max-width: 575px){
+      margin-bottom: 40px;
+    }
+  }
+  &W {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    column-gap: 30px;
+    @media(max-width: 991px){
+      flex-direction: column;
+      row-gap: 30px;
+    }
+  }
+  &Left {
+    max-width: 580px;
+    width: 100%;
+    @media(max-width: 991px){
+      max-width: 100%;
+    }
+  }
+  &Right {
+    max-width: 470px;
+    width: 100%;
+    position: relative;
+    height: fit-content;
+    @media(max-width: 991px){
+      max-width: 100%;
+    }
+    .stars {
+      position: absolute;
+      right: 0;
+      bottom: calc(100% + 80px);
+      width: 122px;
+    }
+    .waves {
+      position: absolute;
+      right: calc(100% - 87px);
+      bottom: 50px;
+    }
+  }
+
+  .round {
+    position: absolute;
+    right: 0;
+    top: 0;
+    @media(max-width: 767px){
+      top: 60px;
+    }
+  }
+
+  &Info {
+    max-width: 600px;
+    padding-left: 53px;
+    line-height: 24px;
+    margin-bottom: 35px;
+    background: url('@img/icons/info.svg') no-repeat left center / 15px;
+    @media(max-width: 575px){
+      padding-left: 40px;
+    }
+  }
+
+  &Form {
+    border: 1px solid #FFF500;
+    padding: 25px;
+    background: #0A0A0A;
+    position: relative;
+    z-index: 1;
+    @media(max-width: 575px){
+      padding: 15px;
+    }
+  }
+}
+.reviews {
+  position: relative;
+  z-index: 1;
+}
+.reviewsItem {
+  border: 1px solid #FFF;
+  display: flex;
+  align-items: center;
+  background-color: #0A0A0A;
+  &:not(:last-child){
+    margin-bottom: 28px;
+  }
+  &Content {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 20px;
+    @media(max-width: 385px){
+      padding-left: 30px;
+      padding-left: 15px;
+      padding-bottom: 15px;
+      padding-right: 15px;
+    }
+  }
+  &Title {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-family: $font-family-bold;
+  }
+  &Img {
+    min-width: 140px;
+    width: 140px;
+    height: 130px;
+    object-fit: contain;
+    @media(max-width: 385px){
+      height: 100px;
+      width: 80px;
+      min-width: 80px;
+    }
+  }
+}
+.order-page {
+  @media(max-width: 767px){
+    padding-top: 40px;
+  }
+  .titleW {
+    margin-bottom: 0;
+  }
+  .orderRight {
+    max-width: 515px;
+  }
+  .orderW {
+    @media(max-width: 991px){
+      align-items: flex-start;
+    }
+  }
+}

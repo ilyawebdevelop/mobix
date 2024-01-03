@@ -1,0 +1,27 @@
+// Footer
+.footer {
+  padding-top: 130px;
+  padding-bottom: 110px;
+  @media(max-width: 1400px){
+    padding-top: 65px;
+    padding-bottom: 65px;
+  }
+  @media(max-width: 575px){
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  &Logo {
+    margin-bottom: 70px;
+    @media(max-width: 1400px){
+      margin-bottom: 50px;
+    }
+    @media(max-width: 575px){
+      margin-bottom: 35px;
+    }
+    img {
+      @media(max-width: 767px){
+        width: 130px;
+      }
+    }
+  }
+}

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/png" href="img/favicon.png">
+
+	<link rel="stylesheet" href="css/style.min.css">
+
+	<title>Доставка и оплата</title>
+	<script src="https://api-maps.yandex.ru/2.1/?apikey=4b879bc2-8fe5-4c89-94ff-047f17e51f17&lang=ru_RU" type="text/javascript"></script>
+</head>
+
+<body>
+	
+	<div class="wrapper">
+		<!-- Header -->
+<header class="header" id="header">
+  <div class="headerTop">
+    <div class="container headerTopContainer">
+      <div class="headerSocials socials">
+        <ul class="socialsList">
+          <li class="socialsItem">
+            <a href="#" class="socialsLink" target="_blank">
+              <img src="img/admin/socials/telegram.svg" alt="socials">
+            </a>
+          </li>
+          <li class="socialsItem">
+            <a href="#" class="socialsLink" target="_blank">
+              <img src="img/admin/socials/twitter.svg" alt="socials">
+            </a>
+          </li>
+          <li class="socialsItem">
+            <a href="mailto:admin@e-mail.ru" class="socialsLink">
+              <img src="img/admin/socials/mail.svg" alt="socials">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div><!-- /headerTop -->
+  <div class="headerMain">
+    <div class="container">
+      <div class="headerMainW">
+        <a href="/" class="headerLogo logo">
+          <img src="img/admin/header/logo.svg" alt="logo">
+        </a>
+        <div class="headerNavW">
+          <nav class="headerNav">
+            <ul class="headerNavList">
+              <li class="menu-current"><a href="#">Главная</a></li>
+              <li><a href="#">Доставка и оплата</a></li>
+              <li><a href="#">Обратная связь</a></li>
+              <li><a href="#">Контакты</a></li>
+            </ul>
+          </nav>
+          <nav class="headerNav">
+            <ul class="headerNavList">
+              <li><a href="#">Каталог</a></li>
+              <li class="menu-cat has-child">
+                <a href="#">
+                  Категории
+                </a>
+                <div class="submenu">
+                  <ul class="submenuList">
+                    <li><a href="#">Категория 1</a></li>
+                    <li><a href="#">Категория 2</a></li>
+                    <li><a href="#">Категория Категория 3</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="menu-users"><a href="#">Пользователи</a></li>
+              <li><a href="#">Настройки</a></li>
+            </ul>
+          </nav>
+          <div class="hamburger" id="toggle">
+            <div class="top-bun"></div>
+            <div class="meat"></div>
+            <div class="bottom-bun"></div>
+          </div><!-- /Hamburger Menu -->
+        </div><!-- /headerNavW -->
+        <a href="#" class="headerCart cart">
+          <img class="headerCartIcon" src="img/icons/cart-black.svg" alt="icon">
+        </a>
+      </div>
+    </div>
+  </div><!-- /headerMain -->
+  <div class="headerNavMobile">
+    <nav class="headerNav pt-0 d-block">
+      <ul class="headerNavList">
+        <li class="menu-current"><a href="#">Главная</a></li>
+        <li><a href="#">Доставка и оплата</a></li>
+        <li><a href="#">Обратная связь</a></li>
+        <li><a href="#">Контакты</a></li>
+      </ul>
+    </nav>
+    <nav class="headerNav d-block">
+      <ul class="headerNavList">
+        <li><a href="#">Каталог</a></li>
+        <li class="menu-cat"><a href="#">Категории</a></li>
+        <li class="menu-users"><a href="#">Пользователи</a></li>
+        <li><a href="#">Настройки</a></li>
+      </ul>
+    </nav>
+    <button class="headerNavMobileClose">
+      <img src="img/icons/menu-close.svg" alt="icon">
+    </button>
+  </div>
+</header>
+		<main class="main">		
+			<section class="delivery delivery-page sect" id="delivery">
+  <div class="container">
+    <div class="deliveryW">
+      <div class="d-block">
+        <div class="d-flex align-items-center">
+          <h1 class="h2 pageTitle">Доставка и оплата</h1>
+        </div><!-- /titleW -->
+        <ul class="deliveryList">
+          <li class="deliveryItem">
+            <h3 class="deliveryItemTitle h3">Курьером по г.Карши</h3>
+            <p class="deliveryItemText">
+              Доставка осуществляется по Карши бесплатно. Данный способ доставки дает вам возможность получить товар
+              прямо
+              в
+              руки, курьером по Карши.
+              Срок доставки до 24 часов с момента заказа товара в интернет - магазине.
+            </p>
+          </li>
+          <li class="deliveryItem deliveryItemBorderBottom">
+            <h3 class="deliveryItemTitle h3">Доставка по Узбекистану</h3>
+            <p class="deliveryItemText">
+              Доставка по Узбекистану осуществляется с помощью почтово – курьерских служб во все регионы Узбекистана.
+              Стоимость доставки зависит от региона и параметров товара. Рассчитать стоимость доставки Вы сможете на
+              официальном сайте почтово – курьерской службы BTS и т.д.
+              Сроки доставки составляет до 3-х дней с момента заказа товара в интернет – магазине.
+            </p>
+          </li>
+          <li class="deliveryItem">
+            <h3 class="deliveryItemTitle h3">Способы оплаты:</h3>
+            <p class="deliveryItemText">
+              <strong>Наличными:</strong> Оплатить заказ товара Вы сможете непосредственно курьеру в руки при получение
+              товара.<br>
+              <strong>Переводом на карту:</strong> Для оплаты заказа переводом на карту, свяжитесь с администратором
+              через
+              телеграм
+              @aligrad
+            </p>
+          </li>
+        </ul>
+      </div>
+      <img src="img/admin/delivery/image.svg" alt="image" class="deliveryImage">
+    </div>
+
+  </div>
+  <img src="img/abstract/section.svg" alt="abstract" class="sect-abstract abstract w-100">
+</section>
+	
+		</main>
+		<!-- Footer -->
+<footer class="footer" id="footer">
+  <div class="container">
+    <a href="/" class="footerLogo logo">
+      <img class="mx-auto" src="img/admin/header/logo.svg" alt="logo">
+    </a>
+    <div class="footerSocials socials">
+      <ul class="socialsList justify-content-center">
+        <li class="socialsItem">
+          <a href="#" class="socialsLink" target="_blank">
+            <img src="img/admin/socials/telegram-yellow.svg" alt="socials">
+          </a>
+        </li>
+        <li class="socialsItem">
+          <a href="#" class="socialsLink" target="_blank">
+            <img src="img/admin/socials/twitter-yellow.svg" alt="socials">
+          </a>
+        </li>
+        <li class="socialsItem">
+          <a href="mailto:admin@e-mail.ru" class="socialsLink">
+            <img src="img/admin/socials/mail-yellow.svg" alt="socials">
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>
+		<!-- modal -->
+<!-- order -->
+<div class="modal fade modal-order" id="modal-order" tabindex="-1" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" data-bs-target="#modal-order">
+        <img src="img/icons/close-white.svg" alt="icon">
+      </button>
+    </div>
+  </div>
+</div>
+	</div>
+	
+	<script src="js/app.min.js"></script>
+
+
+	
+</body>
+
+</html>
+
+
+
+

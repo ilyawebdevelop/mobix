@@ -1,0 +1,126 @@
+.delivery {
+  padding-top: 0;
+  &W {
+    display: flex;
+  }
+  .titleW {
+    @media(max-width: 767px){
+      margin-top: 40px;
+    }
+  }
+  &Title {
+    @media(max-width: 369px){
+      font-size: 22px;
+      line-height: 27px;
+    }
+  }
+  &List {
+    margin-top: 75px;
+    @media(max-width: 1400px){
+      margin-top: 60px;
+    }
+    @media(max-width: 575px){
+      margin-top: 40px;
+    }
+  }
+  &Item {
+    padding-left: 40px;
+    position: relative;
+    @media(max-width: 767px){
+      padding-left: 30px;
+    }
+    &::before {
+      content: '';
+      position: absolute;
+      width: 21px;
+      height: 21px;
+      background-color: #FFF500;
+      border-radius: 50%;
+      left: 0;
+      top: 5px;
+      @media(max-width: 767px){       
+        width: 17px;
+        height: 17px;
+      }
+    }
+    &:not(:last-child){
+      margin-bottom: 30px;
+    }
+    &Title {
+      margin-bottom: 20px;
+      @media(max-width: 575px){
+        margin-bottom: 15px;
+      }
+    }
+    &Text {
+      line-height: 24px;
+    }
+    &.deliveryItemBorderBottom {
+      padding-bottom: 30px;
+      border-bottom: 1px solid #fff;
+    }
+  }
+  .container {
+    padding-top: 120px;
+    position: relative;
+    @media(max-width: 1400px){
+      padding-top: 66px;
+    }
+    @media(max-width: 575px){
+     padding-top: 25px; 
+    }
+  }
+  .stars {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 180px;
+    @media(max-width: 1400px){
+      width: 107px;
+    }
+    @media(max-width: 575px){     
+      // display: none;
+      left: 20px;
+      position: relative;
+    }
+  }
+  .abstract {
+    margin-top: 180px;
+    @media(max-width: 1400px){
+      margin-top: 100px;
+    }
+    @media(max-width: 575px){
+      margin-top: 60px;
+    }
+  }
+}
+.delivery-page {
+  padding-top: 63px;
+  @media(max-width: 767px){
+    padding-top: 40px;
+  }
+  .container {
+    padding-top: 0;
+  }
+  .deliveryList {
+    margin-top: 0;
+  }
+  .abstract {
+    margin-top: 100px;
+  }
+  .deliveryW {
+    @media(max-width: 991px){
+      flex-direction: column;
+    }
+  }
+}
+.deliveryImage {
+  position: relative;
+  left: 100px;
+  height: fit-content;
+  top: 50px;
+  @media(max-width: 991px){
+    max-width: 500px;
+    left: 0;
+  }
+}

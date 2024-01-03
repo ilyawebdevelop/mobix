@@ -1,0 +1,106 @@
+.contacts {
+  padding-top: 25px;
+  @media(max-width: 575px){
+
+  }
+
+  &W {
+    display: flex;
+    column-gap: 130px;
+    margin-bottom: 80px;
+
+    @media(max-width: 1400px) {
+      column-gap: 80px;
+      margin-bottom: 60px;
+    }
+
+    @media(max-width: 1199px) {
+      column-gap: 50px;
+    }
+
+    @media(max-width: 767px) {
+      flex-direction: column;
+      row-gap: 30px;
+      margin-bottom: 40px;
+    }
+  }
+
+  &Text {
+    &:not(:last-child) {
+      margin-bottom: 18px;
+    }
+
+    a {
+      display: inline-block;
+    }
+  }
+
+  &Time {
+    height: fit-content;
+    padding: 10px 20px;
+    border: 1px solid#FFF;
+
+    @media(max-width: 1199px) {
+      width: fit-content;
+      min-width: 186px;
+    }
+    @media(max-width: 767px){
+      min-width: unset;
+    }
+  }
+
+  &Link {
+    padding-left: 38px;    
+    &:not(:last-child){
+      margin-bottom: 18px;
+    }
+  }
+
+  &Iframe {
+    border-radius: 30px;
+    @media(max-width: 767px){
+      border-radius: 12px;
+      height: 60vw;
+    }
+  }
+  .map {
+    border-radius: 30px;
+    height: 395px;
+    overflow: hidden;
+    @media(max-width: 767px){
+      border-radius: 12px;
+      height: 60vw;
+    }
+  }
+
+  .titleW {
+    margin-bottom: 80px;
+
+    @media(max-width: 1400px) {
+      margin-bottom: 60px;
+    }
+
+    @media(max-width: 575px) {
+      margin-bottom: 40px;
+    }
+  }
+}
+
+.contactsTelegram {
+  background: url('@img/icons/telegram-yellow.svg') no-repeat left center / 20px;
+}
+
+.contactsMail {
+  background: url('@img/icons/mail-yellow.svg') no-repeat left center / 22px;
+}
+.contacts-page {
+  .map {
+    border-radius: 30px;
+    height: 395px;
+    overflow: hidden;
+    @media(max-width: 767px){
+      border-radius: 12px;
+      height: 60vw;
+    }
+  }  
+}

@@ -1,0 +1,124 @@
+.cats {
+  padding-top: 0;
+  &Slider {
+    overflow: visible;
+    padding-right: 200px;
+    padding-left: 100px;
+    @media(max-width: 991px){
+      padding-right: 40px;
+      padding-left: 40px;
+    }
+    @media(max-width: 767px){
+      padding-right: 0;
+      padding-left: 0;
+    }
+    @media(max-width: 575px){
+      padding-right: 70px;
+    }
+  }
+  &Slide {
+    opacity: .5;
+    transition: opacity .2s linear;
+    display: grid;
+    grid-template-rows: 186px 1fr;
+    @media(max-width: 1400px){
+      grid-template-rows: 160px 1fr;
+    }
+    @media(max-width: 575px){
+      grid-template-rows: 56vw 1fr;
+    }
+    @media(max-width: 400px){
+      grid-template-rows: 146px 1fr;
+    }
+    &.swiper-slide-active {
+      opacity: 1;
+    }
+    &.swiper-slide-next {
+      opacity: 1;
+      &+.catsSlide {
+        opacity: 1;
+      }
+    }
+  }
+  &Card {
+    padding: 20px;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    border-left: 1px solid #fff;
+    height: auto;
+    @media(max-width: 1400px){
+      padding: 15px;
+    }
+    &:last-child{
+      border-right: 1px solid #fff;
+    }
+    &Img {
+      margin-bottom: 55px;
+      @media(max-width: 1400px){
+        margin-bottom: 30px;
+      }
+      img {
+        width: 100%;
+        height: 130px;
+        object-fit: cover;
+        @media(max-width: 575px){
+          height: 50vw;
+        }
+        @media(max-width: 400px){
+          height: 120px;
+        }
+      }
+    }
+    &Descr {
+      margin-bottom: 10px;
+    }
+    &Name {
+      font-size: 18px;
+      font-family: $font-family-bold;
+    }
+    .button {
+      width: 100%;
+      margin-top: 20px;
+      height: 69px;
+      @media(max-width: 1400px){
+        height: 60px;
+      }
+      @media(max-width: 575px){
+        height: 50px;
+      }
+    }
+  }
+  .titleW {
+    margin-bottom: 80px;   
+    @media(max-width: 1400px){
+      margin-bottom: 60px;
+    }
+    @media(max-width: 575px){
+      margin-bottom: 40px;
+    }
+  }
+  .container {
+    padding-top: 95px;
+    position: relative;
+    @media(max-width: 1400px){
+      padding-top: 45px;
+    }
+  }
+  .stars {
+    position: absolute;
+    left: 0;
+    top: 0;
+    @media(max-width: 575px){
+      display: none;
+    }
+  }
+  .abstract {
+    margin-top: 200px;
+    @media(max-width: 1400px){
+      margin-top: 100px;
+    }
+    @media(max-width: 575px){
+      margin-top: 60px;
+    }
+  }
+}
