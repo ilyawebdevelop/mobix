@@ -91,3 +91,22 @@
     </button>
   </div>
 </header>
+
+
+<a class="headerCart cart" href="<?php echo SITE ?>/cart">
+  <img class="headerCartIcon" src="<?= PATH_TEMPLATE . '/img/icons/cart-black.svg' ?>" alt="icon">
+  <span class="countsht"><?php echo !empty($data['cart_count']) ? $data['cart_count'] : 0 ?></span>
+  <ul class="c-cart__small--list cart-list">
+      <li class="c-cart__small--count">
+          <div class="c-cart__small--text">
+
+          </div>
+      </li>
+      <li class="c-cart__small--price cart-qty">
+          <span class="pricesht">
+              <?php echo !empty($data['cart_price']) ? $data['cart_price'] : 0 ?>
+          </span>
+          <?php echo (!empty($data['currency'])) ? $data['currency'] : ''; ?>
+      </li>
+  </ul>
+</a>

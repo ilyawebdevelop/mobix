@@ -9,8 +9,8 @@ import marker from '../img/icons/marker.svg'
 flsFunctions.isWebp();
 
 // Import swiper
-import Swiper, { Navigation, Pagination, Autoplay, Mousewheel, EffectFade, Thumbs, Scrollbar } from 'swiper';
-Swiper.use([Navigation, Pagination, Autoplay, Mousewheel, EffectFade, Thumbs, Scrollbar]);
+import Swiper, { Navigation, Pagination, Autoplay, Mousewheel, EffectFade, Thumbs, Scrollbar, Controller } from 'swiper';
+Swiper.use([Navigation, Pagination, Autoplay, Mousewheel, EffectFade, Thumbs, Scrollbar, Controller]);
 
 // Инициализация слайдера stocksSlider
 const stocksSlider = document.querySelector('.stocksSlider');
@@ -18,6 +18,8 @@ var mySwiperStocks = new Swiper(stocksSlider, {
   slidesPerView: 3,
   speed: 800,
   spaceBetween: 0,
+  centeredSlides: true,
+  allowTouchMove: false,
   navigation: {
     nextEl: document.querySelector('.stocks .sliderNavArrowNext'),
     prevEl: document.querySelector('.stocks .sliderNavArrowPrev'),
@@ -25,6 +27,7 @@ var mySwiperStocks = new Swiper(stocksSlider, {
   breakpoints: {
     0: {
       slidesPerView: 1,
+      allowTouchMove: true,
     },
     576: {
       slidesPerView: 2,
@@ -34,6 +37,18 @@ var mySwiperStocks = new Swiper(stocksSlider, {
     },
   },
 });
+
+// Инициализация слайдера stocksDescrSlider
+const stocksDescrSlider = document.querySelector('.stocksDescrSlider');
+var mySwiperStocksDescr = new Swiper(stocksDescrSlider, {
+  slidesPerView: 1,
+  speed: 800,
+  spaceBetween: 0,
+  allowTouchMove: false,
+});
+
+mySwiperStocks.controller.control = mySwiperStocksDescr;
+mySwiperStocksDescr.controller.control = mySwiperStocks;
 
 // Инициализация слайдера catsSlider
 const catsSlider = document.querySelector('.catsSlider');

@@ -108,6 +108,25 @@
     </button>
   </div>
 </header>
+
+
+<a class="headerCart cart" href="<?php echo SITE ?>/cart">
+  <img class="headerCartIcon" src="<?= PATH_TEMPLATE . '/img/icons/cart-black.svg' ?>" alt="icon">
+  <span class="countsht"><?php echo !empty($data['cart_count']) ? $data['cart_count'] : 0 ?></span>
+  <ul class="c-cart__small--list cart-list">
+      <li class="c-cart__small--count">
+          <div class="c-cart__small--text">
+
+          </div>
+      </li>
+      <li class="c-cart__small--price cart-qty">
+          <span class="pricesht">
+              <?php echo !empty($data['cart_price']) ? $data['cart_price'] : 0 ?>
+          </span>
+          <?php echo (!empty($data['currency'])) ? $data['currency'] : ''; ?>
+      </li>
+  </ul>
+</a>
 		<main class="main">		
 			<section class="delivery delivery-page sect" id="delivery">
   <div class="container">
@@ -184,19 +203,7 @@
     </div>
   </div>
 </footer>
-		<!-- modal -->
-<!-- order -->
-<div class="modal fade modal-order" id="modal-order" tabindex="-1" aria-labelledby="exampleModalLabel"
-  aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-      
-      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" data-bs-target="#modal-order">
-        <img src="img/icons/close-white.svg" alt="icon">
-      </button>
-    </div>
-  </div>
-</div>
+		
 	</div>
 	
 	<script src="js/app.min.js"></script>

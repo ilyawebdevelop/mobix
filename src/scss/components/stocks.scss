@@ -71,7 +71,8 @@
     }
   }
   &Slide {
-    margin-top: 370px;
+    
+    margin-top: 250px;
     transition: all .2s linear;
     @media(max-width: 1199px){
       margin-top: 80px;
@@ -82,17 +83,18 @@
     }
 
     &.swiper-slide-active {
-      margin-top: 250px;
+      margin-top: 0;
+   
+    }
+
+    &.swiper-slide-next {      
+      margin-top: 370px;
       @media(max-width: 1199px){
         margin-top: 50px;
       }
       @media(max-width: 575px){
         margin-top: 20px;
       }
-    }
-
-    &.swiper-slide-next {
-      margin-top: 0;
     }
   }
 

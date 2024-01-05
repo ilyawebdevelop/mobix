@@ -108,6 +108,25 @@
     </button>
   </div>
 </header>
+
+
+<a class="headerCart cart" href="<?php echo SITE ?>/cart">
+  <img class="headerCartIcon" src="<?= PATH_TEMPLATE . '/img/icons/cart-black.svg' ?>" alt="icon">
+  <span class="countsht"><?php echo !empty($data['cart_count']) ? $data['cart_count'] : 0 ?></span>
+  <ul class="c-cart__small--list cart-list">
+      <li class="c-cart__small--count">
+          <div class="c-cart__small--text">
+
+          </div>
+      </li>
+      <li class="c-cart__small--price cart-qty">
+          <span class="pricesht">
+              <?php echo !empty($data['cart_price']) ? $data['cart_price'] : 0 ?>
+          </span>
+          <?php echo (!empty($data['currency'])) ? $data['currency'] : ''; ?>
+      </li>
+  </ul>
+</a>
 		<main class="main">		
 			<section class="intro" id="intro">
   <div class="container">
@@ -157,12 +176,52 @@
           <h2 class="h2 stocksTitle">Акции</h2>
           <div class="titleArrow titleArrowRight"></div>
         </div><!-- /titleW -->
-        <div class="content">
-          <p>
-            Описание товара Описание товара Описание товара Описание товара Описание товара Описание товара Описание
-            товара Описание товара Описание товара Описание товара Описание товара Описание товара
-          </p>
+
+        <div class="swiper stocksDescrSlider">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide stocksDescrSlide">
+              <div class="content">
+                <p>
+                  Кабель AUX JD413 - это аудио-кабель от известного бренда Кабель AUX JD413 - это аудио-кабель от
+                  известного бренда Кабель AUX JD413 - это аудио-кабель от известного бренда
+                </p>
+              </div>
+            </div><!-- /stocksDescrSlide -->
+
+            <div class="swiper-slide stocksDescrSlide">
+              <div class="content">
+                <p>
+                  Описание товара Описание товара Описание товара Описание товара
+                </p>
+              </div>
+            </div><!-- /stocksDescrSlide -->
+            <div class="swiper-slide stocksDescrSlide">
+              <div class="content">
+                <p>
+                  Третье описание - это аудио-кабель от известного бренда
+                </p>
+              </div>
+            </div><!-- /stocksDescrSlide -->
+            <div class="swiper-slide stocksDescrSlide">
+              <div class="content">
+                <p>
+                  Кабель AUX JD413 - это аудио-кабель
+                </p>
+              </div>
+            </div><!-- /stocksDescrSlide -->
+            <div class="swiper-slide stocksDescrSlide">
+              <div class="content">
+                <p>
+                  Кабель AUX JD413 - это аудио-кабель от известного бренда
+                </p>
+              </div>
+            </div><!-- /stocksDescrSlide -->
+
+          </div>
         </div>
+
+
         <a href="#" class="button stocksBtn button--yellow">Смотреть остальные товары</a>
       </div><!-- /stocksLeft -->
       <div class="stocksRight">
@@ -172,7 +231,7 @@
           <div class="swiper stocksSlider">
             <div class="swiper-wrapper">
 
-              <div class="swiper-slide stocksSlide productCard">
+              <div class="swiper-slide stocksSlide productCard" thumbsslider>
                 <div class="productCardTop">
                   <div class="d-block">
                     <a href="#" class="productCardImg">
@@ -214,7 +273,7 @@
 
               </div><!-- /productCard -->
 
-              <div class="swiper-slide stocksSlide productCard">
+              <div class="swiper-slide stocksSlide productCard" thumbsslider>
                 <a href="#" class="productCardImg">
                   <img src="img/admin/intro/image.png" alt="image">
                 </a>
@@ -250,7 +309,7 @@
                 <div class="productCardPrice">6 000 сум</div>
                 <a href="#" class="productAddToCart button button--yellow">В корзину</a>
               </div><!-- /productCard -->
-              <div class="swiper-slide stocksSlide productCard">
+              <div class="swiper-slide stocksSlide productCard" thumbsslider>
                 <a href="#" class="productCardImg">
                   <img src="img/admin/intro/image.png" alt="image">
                 </a>
@@ -282,11 +341,11 @@
                   </button>
                 </div><!-- /productQuantity -->
                 <a href="#" class="productCardTitle">Кабель AUX JD 413</a>
-                <p class="productCardDescr">Кабель AUX JD413 - это аудио-кабель от известного бренда</p>
+                <p class="productCardDescr">Третье описание - это аудио-кабель от известного бренда</p>
                 <div class="productCardPrice">6 000 сум</div>
                 <a href="#" class="productAddToCart button button--yellow">В корзину</a>
               </div><!-- /productCard -->
-              <div class="swiper-slide stocksSlide productCard">
+              <div class="swiper-slide stocksSlide productCard" thumbsslider>
                 <a href="#" class="productCardImg">
                   <img src="img/admin/intro/image.png" alt="image">
                 </a>
@@ -322,7 +381,7 @@
                 <div class="productCardPrice">6 000 сум</div>
                 <a href="#" class="productAddToCart button button--yellow">В корзину</a>
               </div><!-- /productCard -->
-              <div class="swiper-slide stocksSlide productCard">
+              <div class="swiper-slide stocksSlide productCard" thumbsslider>
                 <a href="#" class="productCardImg">
                   <img src="img/admin/intro/image.png" alt="image">
                 </a>
@@ -680,19 +739,7 @@
     </div>
   </div>
 </footer>
-		<!-- modal -->
-<!-- order -->
-<div class="modal fade modal-order" id="modal-order" tabindex="-1" aria-labelledby="exampleModalLabel"
-  aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-      
-      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" data-bs-target="#modal-order">
-        <img src="img/icons/close-white.svg" alt="icon">
-      </button>
-    </div>
-  </div>
-</div>
+		
 	</div>
 	
 	<script src="js/app.min.js"></script>
