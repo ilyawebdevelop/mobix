@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/png" href="img/favicon.png">
+
+	<link rel="stylesheet" href="css/style.min.css">
+
+	<title>Продукт</title>
+	<script src="https://api-maps.yandex.ru/2.1/?apikey=4b879bc2-8fe5-4c89-94ff-047f17e51f17&lang=ru_RU" type="text/javascript"></script>
+</head>
+
+<body>
+
+	<div class="wrapper">
+		<!-- Header -->
+<header class="header" id="header">
+  <div class="headerTop">
+    <div class="container headerTopContainer">
+      <div class="headerSocials socials">
+        <ul class="socialsList">
+          <li class="socialsItem">
+            <a href="#" class="socialsLink" target="_blank">
+              <img src="img/admin/socials/telegram.svg" alt="socials">
+            </a>
+          </li>
+          <li class="socialsItem">
+            <a href="#" class="socialsLink" target="_blank">
+              <img src="img/admin/socials/twitter.svg" alt="socials">
+            </a>
+          </li>
+          <li class="socialsItem">
+            <a href="mailto:admin@e-mail.ru" class="socialsLink">
+              <img src="img/admin/socials/mail.svg" alt="socials">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div><!-- /headerTop -->
+  <div class="headerMain">
+    <div class="container">
+      <div class="headerMainW">
+        <a href="/" class="headerLogo logo">
+          <img src="img/admin/header/logo.svg" alt="logo">
+        </a>
+        <div class="headerNavW">
+          <nav class="headerNav">
+            <ul class="headerNavList">
+              <li class="menu-current"><a href="#">Главная</a></li>
+              <li><a href="#">Доставка и оплата</a></li>
+              <li><a href="#">Обратная связь</a></li>
+              <li><a href="#">Контакты</a></li>
+            </ul>
+          </nav>
+          <nav class="headerNav">
+            <ul class="headerNavList">
+              <li><a href="#">Каталог</a></li>
+              <li class="menu-cat has-child">
+                <a href="#">
+                  Категории
+                </a>
+                <div class="submenu">
+                  <ul class="submenuList">
+                    <li><a href="#">Категория 1</a></li>
+                    <li><a href="#">Категория 2</a></li>
+                    <li><a href="#">Категория Категория 3</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="menu-users"><a href="#">Пользователи</a></li>
+              <li><a href="#">Настройки</a></li>
+            </ul>
+          </nav>
+          <div class="hamburger" id="toggle">
+            <div class="top-bun"></div>
+            <div class="meat"></div>
+            <div class="bottom-bun"></div>
+          </div><!-- /Hamburger Menu -->
+        </div><!-- /headerNavW -->
+        <a href="#" class="headerCart cart">
+          <img class="headerCartIcon" src="img/icons/cart-black.svg" alt="icon">
+        </a>
+      </div>
+    </div>
+  </div><!-- /headerMain -->
+  <div class="headerNavMobile">
+    <nav class="headerNav pt-0 d-block">
+      <ul class="headerNavList">
+        <li class="menu-current"><a href="#">Главная</a></li>
+        <li><a href="#">Доставка и оплата</a></li>
+        <li><a href="#">Обратная связь</a></li>
+        <li><a href="#">Контакты</a></li>
+      </ul>
+    </nav>
+    <nav class="headerNav d-block">
+      <ul class="headerNavList">
+        <li><a href="#">Каталог</a></li>
+        <li class="menu-cat"><a href="#">Категории</a></li>
+        <li class="menu-users"><a href="#">Пользователи</a></li>
+        <li><a href="#">Настройки</a></li>
+      </ul>
+    </nav>
+    <button class="headerNavMobileClose">
+      <img src="img/icons/menu-close.svg" alt="icon">
+    </button>
+  </div>
+</header>
+
+
+		<main class="main">
+			<section class="product" id="product">
+  <div class="container">
+    <h1 class="productTitle">Кабель AUX JD 413</h1>
+    <div class="productW">
+      <div class="productL">
+        <a data-fslightbox href="img/admin/intro/image.png" class="productImage">
+          <img src="img/admin/intro/image.png" alt="image">
+        </a>
+        <div class="productContent">
+          <div class="productSku">Артикул: CN930</div>
+          <div class="productAvailable">В наличии: 190</div>
+          <div class="ratingW d-flex">
+            <div class="rating rating--3">
+              <svg>
+                <use xlink:href="img/icons/icons.svg#rating"></use>
+              </svg>
+              <svg>
+                <use xlink:href="img/icons/icons.svg#rating"></use>
+              </svg>
+              <svg>
+                <use xlink:href="img/icons/icons.svg#rating"></use>
+              </svg>
+              <svg>
+                <use xlink:href="img/icons/icons.svg#rating"></use>
+              </svg>
+              <svg>
+                <use xlink:href="img/icons/icons.svg#rating"></use>
+              </svg>
+            </div>
+            <div class="ratingCount">(160)</div>
+          </div>
+        </div>
+      </div>
+      <div class="productR">
+        <div class="productAction">
+          <div class="productQuantity" data-title="Количество">
+            <button class="productQuantityMinus productQuantityBtn" type="button"
+              onclick="this.nextElementSibling.stepDown();">
+            </button>
+            <input type="number" step="1" min="1" value="1" title="Кол-во" inputmode="numeric" autocomplete="off">
+            <button class="productQuantityPlus productQuantityBtn" type="button"
+              onclick="this.previousElementSibling.stepUp();">
+            </button>
+          </div><!-- /productQuantity -->
+          <div class="productPrice">
+            6 000 сум
+          </div>
+        </div>
+        <button class="button button--yellow productBtn">В корзину</button>
+
+
+      </div>
+    </div>
+    <div class="tabs" data-tabs="popup">
+      <ul class="tabs__nav">
+        <li class="tabs__nav-item"><button class="tabs__nav-btn" type="button">Описание</button></li>
+        <li class="tabs__nav-item"><button class="tabs__nav-btn" type="button">Характеристики</button></li>
+        <li class="tabs__nav-item"><button class="tabs__nav-btn" type="button">Комментарии</button></li>
+      </ul>
+      <div class="tabs__content">
+        <div class="tabs__panel">
+          <div class="content">
+            Текстовый блок Текстовый блок Текстовый блок Текстовый блок Текстовый блок Текстовый блок Текстовый блок
+            Текстовый блок Текстовый блок Текстовый блок Текстовый блок Текстовый блок Текстовый блок Текстовый блок
+          </div>
+        </div>
+        <div class="tabs__panel">
+          <div class="content">
+            Текстовый блок Текстовый блок Текстовый блок Текстовый блок Текстовый блок Текстовый блок Текстовый блок
+          </div>
+        </div>
+        <div class="tabs__panel">
+          Комменты
+        </div>
+      </div>
+    </div>
+  </div>
+  <img src="img/abstract/section.svg" alt="abstract" class="sect-abstract abstract w-100">
+</section>
+		</main>
+		<!-- Footer -->
+<footer class="footer" id="footer">
+  <div class="container">
+    <a href="/" class="footerLogo logo">
+      <img class="mx-auto" src="img/admin/header/logo.svg" alt="logo">
+    </a>
+    <div class="footerSocials socials">
+      <ul class="socialsList justify-content-center">
+        <li class="socialsItem">
+          <a href="#" class="socialsLink" target="_blank">
+            <img src="img/admin/socials/telegram-yellow.svg" alt="socials">
+          </a>
+        </li>
+        <li class="socialsItem">
+          <a href="#" class="socialsLink" target="_blank">
+            <img src="img/admin/socials/twitter-yellow.svg" alt="socials">
+          </a>
+        </li>
+        <li class="socialsItem">
+          <a href="mailto:admin@e-mail.ru" class="socialsLink">
+            <img src="img/admin/socials/mail-yellow.svg" alt="socials">
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>
+		
+	</div>
+
+	<script src="js/app.min.js"></script>
+
+
+
+</body>
+
+</html>

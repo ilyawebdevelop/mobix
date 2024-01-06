@@ -1,0 +1,73 @@
+.credit {
+  margin-top: -140px;
+  padding-top: 0;
+  border-bottom: 1px solid #FFF601;
+  @media(max-width: 1400px){
+    margin-top: -80px;
+  }
+  @media(max-width: 991px){
+    margin-top: 0;
+  }
+  .stars--white {
+    margin-bottom: 30px;
+    position: relative;
+    right: 25px;
+    @media(max-width: 1400px){
+      width: 108px;
+    }
+    @media(max-width: 575px){
+      right: 0;
+    }
+  }
+  &W {
+    display: flex;
+    justify-content: space-between;
+    @media(max-width: 991px){
+      flex-direction: column;
+      row-gap: 40px;
+    }
+  }
+  &R {
+    position: relative;
+    top: -80px;
+    @media(max-width: 991px){
+      top: 0;
+    }
+  }
+  &Info {
+    background-color: #FFF601;
+    padding: 7px 190px 10px 14px;
+    color: #0A0A0A;
+    width: fit-content;
+    font-family: $font-family-bold;
+    margin-top: 90px;
+    position: relative;
+    @media(max-width: 575px){
+      padding-right: 140px;
+      width: 100%;
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      right: 40px;
+      bottom: 30px;
+      width: 100px;
+      height: 100px;
+      background: url('@img/admin/credit/credit-logo.png') no-repeat center center / contain;
+    }
+  }
+  &Stroke {
+    display: flex;
+    column-gap: 15px;
+    margin-left: -20px;
+    margin-top: -40px;
+    @media(max-width: 991px){
+      margin-top: 30px;
+    }
+  }
+  &Img {
+    @media(max-width: 767px){
+      max-height: 300px;
+    }
+  }
+}

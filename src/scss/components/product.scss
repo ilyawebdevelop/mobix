@@ -5,30 +5,36 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  @media(max-width: 1400px){
+
+  @media(max-width: 1400px) {
     padding: 15px;
   }
 
   &Img {
     margin-bottom: 12px;
     transition: opacity .2s linear;
+
     &:hover {
       opacity: .9;
     }
+
     img {
       width: 100%;
       height: 130px;
       object-fit: cover;
-      @media(max-width: 575px){
+
+      @media(max-width: 575px) {
         height: 50vw;
       }
-    }      
+    }
   }
+
   &Title {
     margin-bottom: 10px;
     font-family: $font-family-bold;
     color: #0A0A0A;
     font-size: 18px;
+
     // height: 17px;
     // overflow: hidden;
     // -webkit-line-clamp: 1;
@@ -36,12 +42,14 @@
     // /* Включаем флексбоксы */
     // -webkit-box-orient: vertical;
     // /* Вертикальная ориентация */    
-    @media(max-width: 1400px){
+    @media(max-width: 1400px) {
       font-size: 16px;
     }
   }
+
   &Descr {
     color: #0A0A0A;
+
     // height: 34px;
     // overflow: hidden;
     // -webkit-line-clamp: 2;
@@ -49,10 +57,11 @@
     // /* Включаем флексбоксы */
     // -webkit-box-orient: vertical;
     // /* Вертикальная ориентация */    
-    @media(max-width: 1400px){
+    @media(max-width: 1400px) {
       font-size: 15px;
     }
   }
+
   &Price {
     font-family: $font-family-bold;
     margin-top: 10px;
@@ -64,13 +73,15 @@
     display: flex;
     column-gap: 16px;
     margin-bottom: 12px;
+
     &--1 {
       svg {
-        &:nth-child(1){
-         fill: #0A0A0A;
+        &:nth-child(1) {
+          fill: #0A0A0A;
         }
       }
     }
+
     &--2 {
       svg {
 
@@ -123,6 +134,7 @@
       fill: rgba($color: #0A0A0A, $alpha: .5);
     }
   }
+
   .productQuantity {
     margin-bottom: 20px;
   }
@@ -154,5 +166,144 @@
 
   &Plus {
     background: url('@img/icons/count-next.svg') no-repeat center center / contain;
+  }
+}
+
+.product {
+  padding-bottom: 0;
+  padding-top: 60px;
+  &W {
+    display: flex;
+    margin-top: 40px;
+    column-gap: 100px;
+    @media(max-width: 991px){
+      flex-direction: column;
+      row-gap: 40px;
+    }
+    @media(max-width: 767px){
+      margin-top: 30px;
+      row-gap: 20px;
+    }
+  }
+  &L {
+    display: flex;
+    column-gap: 45px;
+    @media(max-width: 767px){
+      flex-direction: column;
+      row-gap: 30px;
+    }
+  }
+  &Image {
+    width: 273px;
+    min-width: 273px;
+    height: auto;
+    @media(max-width: 575px){
+      width: 100%;
+      min-width: unset;
+    }
+  }
+  &Action {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media(max-width: 991px){
+      justify-content: flex-start;
+      column-gap: 20px;
+    }
+  }
+  &Price {
+    font-size: 18px;
+    font-family: $font-family-bold;
+    line-height: 27px;
+  }
+  &Title {
+    font-size: 24px;
+    line-height: 36px;
+  }
+  .productQuantity {
+    input {
+      background-color: #fff;
+      color: #000;
+    }
+
+    &Minus {
+      background: url('@img/icons/count-prev-white.svg') no-repeat center center / contain;
+    }
+
+    &Plus {
+      background: url('@img/icons/count-next-white.svg') no-repeat center center / contain;
+    }
+  }
+  &Sku {
+    margin-bottom: 10px;
+  }
+
+  .rating {
+    display: flex;
+    column-gap: 16px;
+    &W {
+      margin-top: 10px;
+      align-items: center;
+      column-gap: 20px;
+    }
+    svg {
+      fill: rgba($color: #fff, $alpha: .5);
+      width: 26px;
+      height: 26px;
+    }
+
+    &--1 {
+      svg {
+        &:nth-child(1) {
+          fill: #fff;
+        }
+      }
+    }
+
+    &--2 {
+      svg {
+
+        &:nth-child(1),
+        &:nth-child(2) {
+          fill: #fff;
+        }
+      }
+    }
+
+    &--3 {
+      svg {
+
+        &:nth-child(1),
+        &:nth-child(2),
+        &:nth-child(3) {
+          fill: #fff;
+        }
+      }
+    }
+
+    &--4 {
+      svg {
+
+        &:nth-child(1),
+        &:nth-child(2),
+        &:nth-child(3),
+        &:nth-child(4) {
+          fill: #fff;
+        }
+      }
+    }
+
+    &--5 {
+      svg {
+
+        &:nth-child(1),
+        &:nth-child(2),
+        &:nth-child(3),
+        &:nth-child(4),
+        &:nth-child(5) {
+          fill: #fff;
+        }
+      }
+    }
   }
 }
