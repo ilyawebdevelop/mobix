@@ -198,5 +198,17 @@
         width: 100%;
       }
     }
+    &::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 96px;
+      background-color: #FFF500;
+      right: -40px;
+      bottom: 0;
+      @media(max-width: 991px){
+        display: none;
+      }
+    }
   }
 }

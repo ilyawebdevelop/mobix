@@ -273,15 +273,24 @@
   line-height: 23px;
   padding-left: 15px;
   padding-right: 15px;
+  padding-bottom: 6px;
+  padding-top: 6px;
   cursor: pointer;
   position: relative;
+  transition: background .2s linear;
 
-  @media(max-width: 575px) {
-    padding-left: 0;
+  // @media(max-width: 575px) {
+  //   padding-left: 0;
+  // }
+  &:hover {
+    background: rgba(255, 245, 0, 0.11);
+  }
+  &.active {
+    background: rgba(255, 245, 0, 0.11);
   }
 
   &:not(:last-child) {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 
     @media(max-width: 575px) {
       margin-bottom: 12px;
@@ -295,7 +304,7 @@
     top: 0;
     z-index: 1;
     background-color: #0A0A0A;
-    padding: 20px;
+    padding: 0 0 20px 0;
     width: 300px;
     @media(max-width: 991px){
       left: 0;
@@ -304,11 +313,16 @@
     }
     &Name {
       position: relative;
+      padding: 6px 15px;
+      transition: background .2s linear;
+      &:hover {
+        background: rgba(255, 245, 0, 0.11);
+      }
       &::before {
         content: '- ';
       }
       &:not(:last-child){
-        margin-bottom: 8px;
+       
       }
     }
   }

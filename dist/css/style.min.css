@@ -14339,6 +14339,15 @@ h2 {
   border: 1px solid #FFF500;
   background: #0A0A0A;
 }
+.button--black {
+  background-color: #0A0A0A;
+  color: #fff;
+  transition: background-color 0.2s linear, color 0.2s linear;
+}
+.button--black:hover {
+  background-color: #FFF500;
+  color: #0A0A0A;
+}
 
 .stocksBtn {
   margin-top: 30px;
@@ -14348,7 +14357,6 @@ h2 {
   margin-top: 20px;
   height: 69px;
   width: 100%;
-  transition: background 0.2s linear;
 }
 @media (max-width: 1400px) {
   .productAddToCart {
@@ -14359,10 +14367,6 @@ h2 {
   .productAddToCart {
     height: 50px;
   }
-}
-.productAddToCart:hover {
-  background-color: #0A0A0A;
-  color: #fff;
 }
 
 .catsBtn {
@@ -15239,16 +15243,20 @@ h2 {
   line-height: 23px;
   padding-left: 15px;
   padding-right: 15px;
+  padding-bottom: 6px;
+  padding-top: 6px;
   cursor: pointer;
   position: relative;
+  transition: background 0.2s linear;
 }
-@media (max-width: 575px) {
-  .filterItem {
-    padding-left: 0;
-  }
+.filterItem:hover {
+  background: rgba(255, 245, 0, 0.11);
+}
+.filterItem.active {
+  background: rgba(255, 245, 0, 0.11);
 }
 .filterItem:not(:last-child) {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 @media (max-width: 575px) {
   .filterItem:not(:last-child) {
@@ -15262,7 +15270,7 @@ h2 {
   top: 0;
   z-index: 1;
   background-color: #0A0A0A;
-  padding: 20px;
+  padding: 0 0 20px 0;
   width: 300px;
 }
 @media (max-width: 991px) {
@@ -15274,14 +15282,15 @@ h2 {
 }
 .filterItem .filterSubItemName {
   position: relative;
+  padding: 6px 15px;
+  transition: background 0.2s linear;
+}
+.filterItem .filterSubItemName:hover {
+  background: rgba(255, 245, 0, 0.11);
 }
 .filterItem .filterSubItemName::before {
   content: "- ";
 }
-.filterItem .filterSubItemName:not(:last-child) {
-  margin-bottom: 8px;
-}
-
 .filterItemArrow {
   width: 6px;
   height: 11px;
@@ -15556,6 +15565,20 @@ h2 {
     left: -20px;
     height: 100%;
     width: 100%;
+  }
+}
+.intro .imgW::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 96px;
+  background-color: #FFF500;
+  right: -40px;
+  bottom: 0;
+}
+@media (max-width: 991px) {
+  .intro .imgW::after {
+    display: none;
   }
 }
 
