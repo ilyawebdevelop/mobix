@@ -15807,6 +15807,7 @@ h2 {
 @media (max-width: 1400px) {
   .stocksRight .round {
     right: 270px;
+    width: 100px;
   }
 }
 @media (max-width: 1199px) {
@@ -15837,6 +15838,14 @@ h2 {
     padding-top: 0;
   }
 }
+.stocksSlider {
+  min-height: 848px;
+}
+@media (max-width: 991px) {
+  .stocksSlider {
+    min-height: 530px;
+  }
+}
 @media (max-width: 575px) {
   .stocksSlider {
     padding-right: 70px;
@@ -15844,33 +15853,38 @@ h2 {
   }
 }
 .stocksSlide {
-  margin-top: 250px;
-  transition: all 0.2s linear;
+  margin-top: 370px;
+  transition: all 0.5s linear;
 }
 @media (max-width: 1199px) {
-  .stocksSlide {
-    margin-top: 80px;
-  }
-}
-@media (max-width: 575px) {
   .stocksSlide {
     margin-top: 0;
   }
 }
 .stocksSlide.swiper-slide-active {
-  margin-top: 0;
-}
-.stocksSlide.swiper-slide-next {
-  margin-top: 370px;
+  margin-top: 229px;
 }
 @media (max-width: 1199px) {
-  .stocksSlide.swiper-slide-next {
+  .stocksSlide.swiper-slide-active {
     margin-top: 50px;
   }
 }
 @media (max-width: 575px) {
-  .stocksSlide.swiper-slide-next {
+  .stocksSlide.swiper-slide-active {
     margin-top: 20px;
+  }
+}
+.stocksSlide.swiper-slide-next {
+  margin-top: 0;
+}
+@media (max-width: 1199px) {
+  .stocksSlide.swiper-slide-next {
+    margin-top: 80px;
+  }
+}
+@media (max-width: 575px) {
+  .stocksSlide.swiper-slide-next {
+    margin-top: 0;
   }
 }
 .stocks .abstract {

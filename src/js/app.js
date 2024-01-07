@@ -19,7 +19,7 @@ var mySwiperStocks = new Swiper(stocksSlider, {
   slidesPerView: 3,
   speed: 800,
   spaceBetween: 0,
-  centeredSlides: true,
+  // centeredSlides: true,
   allowTouchMove: false,
   navigation: {
     nextEl: document.querySelector('.stocks .sliderNavArrowNext'),
@@ -40,16 +40,16 @@ var mySwiperStocks = new Swiper(stocksSlider, {
 });
 
 // Инициализация слайдера stocksDescrSlider
-const stocksDescrSlider = document.querySelector('.stocksDescrSlider');
-var mySwiperStocksDescr = new Swiper(stocksDescrSlider, {
-  slidesPerView: 1,
-  speed: 800,
-  spaceBetween: 0,
-  allowTouchMove: false,
-});
+// const stocksDescrSlider = document.querySelector('.stocksDescrSlider');
+// var mySwiperStocksDescr = new Swiper(stocksDescrSlider, {
+//   slidesPerView: 1,
+//   speed: 800,
+//   spaceBetween: 0,
+//   allowTouchMove: false,
+// });
 
-mySwiperStocks.controller.control = mySwiperStocksDescr;
-mySwiperStocksDescr.controller.control = mySwiperStocks;
+// mySwiperStocks.controller.control = mySwiperStocksDescr;
+// mySwiperStocksDescr.controller.control = mySwiperStocks;
 
 // Инициализация слайдера catsSlider
 const catsSlider = document.querySelector('.catsSlider');
