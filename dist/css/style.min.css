@@ -15438,7 +15438,7 @@ h2 {
   top: 0;
   z-index: 1;
   background-color: #0A0A0A;
-  padding: 0 0 20px 0;
+  padding: 0 0 0 0;
   width: 300px;
 }
 @media (max-width: 991px) {
@@ -15455,9 +15455,6 @@ h2 {
 }
 .filterItem .filterSubItemName:hover {
   background: rgba(255, 245, 0, 0.11);
-}
-.filterItem .filterSubItemName::before {
-  content: "- ";
 }
 .filterItemArrow {
   width: 6px;
